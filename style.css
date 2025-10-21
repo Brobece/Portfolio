@@ -16,33 +16,49 @@ body {
   display: flex;
   position: fixed;
   z-index: 1;
-  /* background-color: rgba(255, 255, 255, 0.1); */
   width: 100%;
   height: 4em;
   top: 0;
   left: 0;
   align-items: center;
   justify-content: space-between;
+  transition: 0.6s;
+}
+
+.navBar.sticky{
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.1),
+    rgba(0,0,0,1)
+  );
 }
 
 #dev{
+  position: relative;
   color: white;
-  font-size: xx-large;
-  padding-left: 4em;
+  font-size: 50px;
+  padding-left: 3em;
+}
+
+#dev a{
+  text-decoration: none;
+  color: white;
 }
 
 .barra{
+  position: relative;
   color: white;
   font-size: larger;
   display: flex;
   padding-left: 40em;
 }
 
-#home, #sobre, #projetos, #habilidades, #contato{
+#sobre, #projetos, #habilidades, #contato{
   text-decoration: none;
   color: darkgrey;
   transition: 0.3s;
   padding: 1em;
+  font-size: 22px;
 }
 
 #home:hover, #sobre:hover, #projetos:hover, #habilidades:hover, #contato:hover{
@@ -82,10 +98,18 @@ body {
   max-width: 40em;
 }
 
+.homeContainer h1{
+  font-size: 48px;
+}
+
+.homeContainer p{
+  font-size: 22px;
+}
+
 #minhaPFP{
   display: flex;
   margin-left: 70em;
-  margin-top: -17em;
+  margin-top: -20em;
   width: 25em;
   height: auto;
 }
@@ -95,6 +119,10 @@ body {
   gap: 0.5em;
 }
 
+#myPlace p{
+  font-size: 18px;
+}
+
 #disponibilidade{
   padding: 0.45em;
   display: flex;
@@ -102,10 +130,19 @@ body {
   gap: 0.8em;
   margin-top: -1.5em;
 }
+#disponibilidade p{
+  font-size: 18px;
+}
 
 .circleHome{
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: green;
+}
+
+/* About me */
+
+.mainTextAbout{
+  color: white;
 }

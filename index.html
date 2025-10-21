@@ -7,34 +7,44 @@
     <title>Portfólio</title>
 </head>
 <body>
-    <div class="home">
-        <div class="navBar">
-            <span id="dev">&lt;Dev&nbsp;/&gt;</span>
-            <div class="barra">
-                <a id="home" href="">Home</a>
-                <a id="sobre" href="">Sobre</a>
-                <a id="projetos" href="">Projetos</a>
-                <a id="habilidades" href="">Habilidades</a>
-                <a id="contato" href="">Contato</a>
+    <section id="home">
+        <div class="home">
+            <!-- criando a navBar -->
+            <div class="navBar">
+                <span id="dev"><a href="">&lt;Dev&nbsp;/&gt;</a></span>
+                <div class="barra">
+                    <a id="sobre" href="#about">Sobre</a>
+                    <a id="projetos" href="">Projetos</a>
+                    <a id="habilidades" href="">Habilidades</a>
+                    <a id="contato" href="">Contato</a>
+                </div>
+                <button id="l_dBtn"><img id="l_d" src="assets/light_dark.svg" alt="light/dark"></button>
             </div>
-            <button id="l_dBtn"><img id="l_d" src="assets/light_dark.svg" alt="light/dark"></button>
+            <!-- Criando a parte do home -->
+            <div class="homeContainer">
+                <h1>Olá, sou João Guilherme</h1>
+                <p>Sou estudante de Ciência da Computação na Universidade Tiradentes e estou no 2 período. Atualmente estou estudando linguagens e frameworks do front, mas pretendo estudar o back e me especializar nele também!</p>
+                <div class="homeInfo">
+                    <div id="myPlace">
+                        <img src="assets/map.svg" alt="map">
+                        <p>Aracaju, Brasil</p>
+                    </div>
+                    <div id="disponibilidade">
+                        <div class="circleHome"></div>
+                        <p>Disponível para novos projetos!</p>
+                    </div>
+                </div>
+                <img id="minhaPFP" src="assets/PFP.png" alt="minhaPFP">
+            </div>
         </div>
-        <div class="homeContainer">
-            <h1>Olá, sou João Guilherme</h1>
-            <p>Sou estudante de Ciência da Computação na Universidade Tiradentes e estou no 2 período. Atualmente estou estudando linguagens e frameworks do front, mas pretendo estudar o back e me especializar nele também!</p>
-            <div class="homeInfo">
-                <div id="myPlace">
-                    <img src="assets/map.svg" alt="map">
-                    <p>Aracaju, Brasil</p>
-                </div>
-                <div id="disponibilidade">
-                    <div class="circleHome"></div>
-                    <p>Disponível para novos projetos!</p>
-                </div>
-            </div>     
-            <img id="minhaPFP" src="assets/PFP.png" alt="minhaPFP">       
-        </div>        
-    </div>
+    </section>
+
+    <!-- Criando o about Me -->
+    <section id="about">
+        <div>
+            <p class="mainTextAbout">Oi! Sou um estudante de Ciência da Computação de 18 anos, morando em Aracaju (SE). Tenho grande interesse em desenvolvimento back-end, especialmente com Java e Clojure, mas também gosto de explorar o front-end com React para entender o todo. Meu objetivo é crescer como desenvolvedor, conquistar uma vaga em uma grande empresa de tecnologia e, quem sabe, trabalhar fora do país. Falo inglês e pretendo aprender uma língua asiática como chinês ou coreano, unindo aprendizado técnico e cultural. Quando não estou estudando ou programando, gosto de jogar — principalmente títulos de ação, como Red Dead Redemption 2. Sou curioso, dedicado e acredito que cada desafio é uma chance de evoluir</p>
+        </div>
+    </section>
     <ul>
         <li></li>
         <li></li>
@@ -137,7 +147,7 @@
         <li></li>
         <li></li>
     </ul>
-
+<script src="index.js" ></script>
 
 </body>
 </html>
