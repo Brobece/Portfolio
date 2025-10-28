@@ -29,7 +29,7 @@ body {
   background-image: linear-gradient(
     to bottom,
     rgba(255,255,255,0.1),
-    rgba(0,0,0,1)
+    rgba(3,7,18,1)
   );
 }
 
@@ -144,5 +144,8 @@ body {
 /* About me */
 
 .mainTextAbout{
+  max-width: 300px;
   color: white;
+  margin-top: 18em;
+  margin-left: 78em;
 }
