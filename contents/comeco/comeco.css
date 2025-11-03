@@ -1,0 +1,46 @@
+/* .home {
+    display: flex;
+} */
+
+.navBar{
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10em;
+    margin-top: 1rem;
+}
+
+.barra {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row nowrap;
+}
+
+.homeContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3.7rem;
+    gap: 20rem;
+}
+
+.homeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.myPlace, .disponibilidade {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: flex-start;
+}
+
+.circleHome {
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
