@@ -108,28 +108,23 @@ body {
     width: 27rem;
 }
 
-@media (max-width: 1475px){
-    #dev a {
-        font-size: 4vh;
-    }
-
-    .barra a {
-        font-size: 2vh;
-    }
-
+/* Notebook */
+@media (max-width: 1366px){
     .homeText h1 {
         font-size: 2rem;
     }
 
     #minhaPFP {
-    width: 20rem;
+    width: 21rem;
     }
 
 }
 
-@media (max-width: 1135px){
+
+/* Ipad */
+@media (max-width: 768px){
     #dev a {
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
 
     .barra a {
@@ -146,7 +141,9 @@ body {
 
 }
 
-@media (max-width: 985px){
+
+/* Cllr grande */
+@media (max-width: 390px){
     #dev a {
         font-size: 3vh;
     }
@@ -169,7 +166,9 @@ body {
 
 }
 
-@media (max-width: 985px){
+
+/* Cllr menor */
+@media (max-width: 360px){
     #dev a {
         font-size: 3vh;
     }
