@@ -1,0 +1,38 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #030712 0%,
+    #030712 50%,
+    #374151 50%,
+    #374151 100%
+  );
+}
+
+#about {
+    padding: 10rem;
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutImage {
+    width: 30%;
+}
+
+.aboutText {
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutText h2 {
+    font-size: xx-large;
+}
+
+.aboutText p {
+    max-width: 600px;
+    font-size: large;
+}
