@@ -64,10 +64,13 @@ body {
 
 /* Conteudo da pagina de comeco */
 .homeContainer {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 3.7rem;
-    gap: 20rem;
+    gap: 20rem; */
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .homeText {
