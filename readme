@@ -1,3 +1,7 @@
 O carrossel nao esta 100% funcional pois não tem a quantidade necessaria para "funcionar", mas isso so acontece em telas maiores, como PC e Notebooks. Mas em celulares e tablets/ipads esta tranquilo.
 
-O formulario de contato so funciona no site do github devido à api usada, entao caso queira testar, vá para: https://brobece.github.io/Portfolio/
+O formulario de contato so funciona no site do github devido à api usada, entao caso queira testar, vá para: https://brobece.github.io/Portfolio/ .
+
+O botao de light/dark theme tambem não esta funcional AINDA, mas futuramente eu irei acrescentar essa função.
+
+E os projetos nao estao sendo direcionados para um outro site pois eu nao subi eles no github page ou pra outro host.
