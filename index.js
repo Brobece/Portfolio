@@ -33,3 +33,11 @@ const swiper = new Swiper('.slider-wrapper', {
     },
   }
 });
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const barraMenu = document.querySelector(".barra");
+
+hamburgerBtn.addEventListener("click", () => {
+    hamburgerBtn.classList.toggle("active");
+    barraMenu.classList.toggle("show");
+});
