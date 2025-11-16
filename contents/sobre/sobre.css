@@ -9,30 +9,99 @@ body {
 }
 
 #about {
-    padding: 10rem;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 6rem;
 }
 
 .aboutContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2rem;
 }
 
 #aboutImage {
-    width: 30%;
+  width: 90%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .aboutText {
-    color: white;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+  color: white;
 }
 
 .aboutText h2 {
-    font-size: xx-large;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .aboutText p {
-    max-width: 600px;
-    font-size: large;
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1366px) {
+  #about {
+    padding: 6rem 4rem;
+  }
+  .aboutText p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #about {
+    padding: 5rem 3rem;
+  }
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #aboutImage {
+    width: 60%;
+  }
+  .aboutText p {
+    margin-inline: auto;
+  }
+}   
+
+@media (max-width: 768px) {
+  #about {
+    padding: 4rem 2rem;
+  }
+  .aboutText h2 {
+    font-size: 2rem;
+  }
+  #aboutImage {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding: 3rem 1.5rem;
+  }
+  .aboutText h2 {
+    font-size: 1.7rem;
+  }
+  .aboutText p {
+    font-size: 1rem;
+  }
+  #aboutImage {
+    width: 80%;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 360px) {
+  .aboutText h2 {
+    font-size: 1.5rem;
+  }
+  #aboutImage {
+    width: 85%;
+  }
 }

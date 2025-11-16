@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="projetos.css">
-    <title>Projetos</title>
 </head>
 <body>
-    <section id="projetos">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+    <section class="projetos">
+        <!-- como tem poucos projetos, talvez fique um pouco estranho dentro do site -->
+        <div class="projectsContainer swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.24.25_1171a8bb.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Calculadora em JS</h2>
+                        <p class="project-description">Atividade feita em aula</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.26.11_37e789ae.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Site Semde</h2>
+                        <p class="project-description">Projeto de Residência 1</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 11.14.00_603de8fa.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Saas Barber</h2>
+                        <p class="project-description">Projeto em Andamento</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 11.14.00_603de8fa.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Saas Barber</h2>
+                        <p class="project-description">Projeto em Andamento</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                </div>
 
-                <div class="slide first">
-                    <img src="assets/testeimg.png" alt="Imagem 1">
-                </div>
-                <div class="slide">
-                    <img src="assets/PFP.png" alt="Imagem 2">
-                </div>
-                <div class="slide">
-                    <img src="assets/testeimg.png" alt="Imagem 3">
-                </div>
-                <div class="slide">
-                    <img src="assets/PFP.png" alt="Imagem 4">
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-
         </div>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="projetos.js"></script>
+    </section>
 </body>
 </html>

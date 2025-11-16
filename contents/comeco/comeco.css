@@ -20,6 +20,14 @@ body {
     color: white;
 }
 
+.navBar.sticky{
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.1),
+    rgba(0,0,0,1)
+  );
+}
+
 #dev a{
     text-decoration: none;
     color: white;
@@ -64,10 +72,6 @@ body {
 
 /* Conteudo da pagina de comeco */
 .homeContainer {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 3.7rem;
-    gap: 20rem; */
     margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -112,84 +116,104 @@ body {
 }
 
 /* Notebook */
-@media (max-width: 1366px){
-    .homeText h1 {
-        font-size: 2rem;
-    }
+@media (max-width: 1366px) {
+  .navBar {
+    gap: 5rem;
+  }
 
-    #minhaPFP {
-    width: 21rem;
-    }
+  .homeContainer {
+    justify-content: space-between;
+    padding-inline: 2rem;
+  }
 
+  #minhaPFP {
+    width: 22rem;
+  }
 }
 
+@media (max-width: 1024px) {
+  .navBar {
+    gap: 2rem;
+  }
+
+  .homeContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  #minhaPFP {
+    width: 20rem;
+  }
+
+  .homeText p {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+}
 
 /* Ipad */
-@media (max-width: 768px){
-    #dev a {
-        font-size: 3.5vh;
-    }
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-    .barra a {
-        font-size: 1.5vh;
-    }
+  #dev a {
+    font-size: 4vh;
+  }
 
-    .homeText h1 {
-        font-size: 1.5rem;
-    }
+  .barra {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
 
-    #minhaPFP {
+  .homeText h1 {
+    font-size: 2.5rem;
+  }
+
+  #minhaPFP {
     width: 17rem;
-    }
-
+  }
 }
+
 
 
 /* Cllr grande */
-@media (max-width: 390px){
-    #dev a {
-        font-size: 3vh;
-    }
+@media (max-width: 480px) {
+  .homeText h1 {
+    font-size: 2rem;
+  }
 
-    .barra a {
-        font-size: 1.5vh;
-    }
+  .barra a {
+    font-size: 2vh;
+    padding-inline: 0.4em;
+  }
 
-    .homeText h1 {
-        font-size: 1.3rem;
-    }
+  #dev a {
+    font-size: 3.5vh;
+  }
 
-    .homeText p {
-        font-size: small;
-    }
-
-    #minhaPFP {
-    width: 17rem;
-    }
-
+  #minhaPFP {
+    width: 14rem;
+  }
 }
 
 
 /* Cllr menor */
-@media (max-width: 360px){
-    #dev a {
-        font-size: 3vh;
-    }
+@media (max-width: 360px) {
+  .homeText h1 {
+    font-size: 1.7rem;
+  }
 
-    .barra a {
-        font-size: 1.5vh;
-    }
+  .barra {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-    .homeText h1 {
-        font-size: 1.3rem;
-    }
-
-    .homeText p {
-        font-size: small;
-    }
-
-    #minhaPFP {
-    width: 17rem;
-    }
-
+  #minhaPFP {
+    width: 12rem;
+  }
 }

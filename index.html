@@ -1,181 +1,170 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 <body>
-    <section id="home">
-        <div class="home">
-            <!-- criando a navBar -->
-            <div class="navBar">
-                <span id="dev"><a href="">&lt;Dev&nbsp;/&gt;</a></span>
-                <div class="barra">
-                    <a id="sobre" href="#about">Sobre</a>
-                    <a id="projetos" href="">Projetos</a>
-                    <a id="habilidades" href="">Habilidades</a>
-                    <a id="contato" href="">Contato</a>
-                </div>
+    <nav>
+    <!-- criando a navBar -->
+        <div class="navBar">
+            <span id="dev"><a href="#home">&lt;Dev&nbsp;/&gt;</a></span>
+            <div class="barra">
+                <a id="sobreBar" href="#about">Sobre</a>
+                <a id="projetosBar" href="#projetos">Projetos</a>
+                <a id="habilidadesBar" href="#skills">Habilidades</a>
+                <a id="contatoBar" href="#contact">Contato</a>
                 <button id="l_dBtn"><img id="l_d" src="assets/light_dark.svg" alt="light/dark"></button>
             </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div id="home">
             <!-- Criando a parte do home -->
             <div class="homeContainer">
-                <h1>Olá, sou João Guilherme</h1>
-                <p>Sou estudante de Ciência da Computação na Universidade Tiradentes e estou no 2 período. Atualmente estou estudando algumas linguagens e frameworks do front, mas pretendo estudar o back e me especializar nele também!</p>
-                <div class="homeInfo">
-                    <div id="myPlace">
-                        <img src="assets/map.svg" alt="map">
-                        <p>Aracaju, Brasil</p>
+                <div class="homeText">
+                    <div class="homeTextText">
+                        <h1>Olá, sou João Guilherme</h1>
+                        <p>Sou estudante de Ciência da Computação na Universidade Tiradentes e estou no 2 período. Atualmente estou estudando algumas linguagens e frameworks do front, mas pretendo estudar o back e me especializar nele também!</p>
                     </div>
-                    <div id="disponibilidade">
-                        <div class="circleHome"></div>
-                        <p>Disponível para novos projetos!</p>
+                    <div class="homeInfo">
+                        <div class="myPlace">
+                            <img src="assets/map.svg" alt="map">
+                            <p>Aracaju, Brasil</p>
+                        </div>
+                        <div class="disponibilidade">
+                            <div class="circleHome"></div>
+                            <p>Disponível para novos projetos!</p>
+                        </div>
                     </div>
                 </div>
                 <img id="minhaPFP" src="assets/PFP.png" alt="minhaPFP">
             </div>
         </div>
     </section>
+    <section id="about">
+        <div class="aboutContainer">
+            <div class="aboutImage">
+                <img id='aboutImage'src="assets/programming-image.jpg" alt="programming-image">
+            </div>
+            <div class="aboutText">
+                <h2>Curioso sobre mim? Aqui vai:</h2>
+                <p>
+                    Oi! Sou um estudante de Ciência da Computação de 18 anos, morando em Aracaju (SE).
+                    Tenho grande interesse em desenvolvimento back-end, especialmente com Java e Clojure,
+                    mas também gosto de explorar o front-end com React para entender o todo.
+                </p>
+                <p>
+                    Meu objetivo é crescer como desenvolvedor, conquistar uma vaga em uma grande empresa
+                    de tecnologia e, quem sabe, trabalhar fora do país. Falo inglês e pretendo aprender
+                    uma língua asiática como chinês ou coreano, unindo aprendizado técnico e cultural.
+                </p>
+                <p>
+                    Quando não estou estudando ou programando, gosto de jogar — principalmente títulos de
+                    ação, como Red Dead Redemption 2. Sou curioso, dedicado e acredito que cada desafio é
+                    uma chance de evoluir.
+                </p>
+                <ul class="aboutList">
+                    <li>🎓 Estudante de Ciência da Computação</li>
+                    <li>💻 Foco em Back-End (Java, Clojure)</li>
+                    <li>🌍 Aprendendo React e desenvolvimento web</li>
+                    <li>🎮 Apaixonado por games e aprendizado contínuo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projetos">
+        <!-- como tem poucos projetos, talvez fique um pouco estranho dentro do site. ALem disso, como so tem 3 projetos, nao ira aparecer os botoes para ir e voltar do carrossel -->
+        <div class="projectsContainer swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.24.25_1171a8bb.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Calculadora em JS</h2>
+                        <p class="project-description">Atividade feita em aula</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.26.11_37e789ae.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Site Semde</h2>
+                        <p class="project-description">Projeto de Residência 1</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 11.14.00_603de8fa.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Saas Barber</h2>
+                        <p class="project-description">Projeto em Andamento</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                </div>
 
-    <!-- Criando o about Me -->
-<section class="aboutSection" id="sobre">
-  <div class="aboutContainer">
-    <div class="aboutImage">
-      <img src="assets/programming-image.jpg" alt="programming-image">
-    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-card 1">
+                <img src="assets/HTML5_logo_and_wordmark.svg.png" alt="Html Logo">
+                <p>Html</p>
+            </div>
 
-    <div class="aboutText">
-      <h2>Curioso sobre mim? Aqui vai:</h2>
-      <p>
-        Oi! Sou um estudante de Ciência da Computação de 18 anos, morando em Aracaju (SE).
-        Tenho grande interesse em desenvolvimento back-end, especialmente com Java e Clojure,
-        mas também gosto de explorar o front-end com React para entender o todo.
-      </p>
-      <p>
-        Meu objetivo é crescer como desenvolvedor, conquistar uma vaga em uma grande empresa
-        de tecnologia e, quem sabe, trabalhar fora do país. Falo inglês e pretendo aprender
-        uma língua asiática como chinês ou coreano, unindo aprendizado técnico e cultural.
-      </p>
-      <p>
-        Quando não estou estudando ou programando, gosto de jogar — principalmente títulos de
-        ação, como Red Dead Redemption 2. Sou curioso, dedicado e acredito que cada desafio é
-        uma chance de evoluir.
-      </p>
+            <div class="skills-card 2">
+                <img src="assets/Official_CSS_Logo.svg.png" alt="Css Logo">
+                <p>Css</p>
+            </div>
 
-      <ul class="aboutList">
-        <li>🎓 Estudante de Ciência da Computação</li>
-        <li>💻 Foco em Back-End (Java, Clojure)</li>
-        <li>🌍 Aprendendo React e desenvolvimento web</li>
-        <li>🎮 Apaixonado por games e aprendizado contínuo</li>
-      </ul>
-    </div>
-  </div>
-</section>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-<script src="index.js" ></script>
+            <div class="skills-card 3">
+                <img src="assets/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+            </div>
 
+            <div class="skills-card 4">
+                <img src="assets/R-removebg-preview.png" alt="Java Logo">
+                <p>Java</p>
+            </div>
+
+            <div class="skills-card 5">
+                <img src="assets/clojure-logo-120b.png" alt="Clojure Logo">
+                <p>Clojure</p>
+            </div>
+
+            <div class="skills-card 6">
+                <img src="assets/pythonlogo.png" alt="Python Logo">
+                <p>Python</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <form action="" class="contact-left">
+                <div class="contact-left-tittle">
+                    <h2>Entre em Contato</h2>
+                    <hr>
+                </div>
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+            </form>
+            <div class="contact-right">
+                <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 13.10.16_93b3df91.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="rodape">
+            <p>&copy; João Guilherme Costa Carvalho</p>
+            <p>Tel.: (79) 9 1234-5678</p>
+            <p>Email.: joao.ccarvalho@souunit.com.br</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

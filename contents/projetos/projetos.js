@@ -1,15 +1,30 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+const swiper = new Swiper('.slider-wrapper', {  
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 30,
 
-function nextImage() {
-    count++;
-    if(count>4){
-        count = 1
-    };
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-    document.getElementById("radio"+count).checked = true
-}
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-setInterval(function(){
-    nextImage()
-}, 5000)
+  breakpoints: {
+    0: {
+        slidesPerView: 1
+    },
+    768: {
+        slidesPerView: 2
+    },
+    1024: {
+        slidesPerView: 3
+    },
+  }
+});

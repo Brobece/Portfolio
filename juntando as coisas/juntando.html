@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="juntando.css">
     <title>Document</title>
+    <link rel="stylesheet" href="juntando.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
 <body>
-    <section id="home">
-        <div class="home">
-            <!-- criando a navBar -->
-            <div class="navBar">
-                <span id="dev"><a href="#home">&lt;Dev&nbsp;/&gt;</a></span>
-                <div class="barra">
-                    <a id="sobre" href="#about">Sobre</a>
-                    <a id="projetos" href="">Projetos</a>
-                    <a id="habilidades" href="">Habilidades</a>
-                    <a id="contato" href="">Contato</a>
-                    <button id="l_dBtn"><img id="l_d" src="assets/light_dark.svg" alt="light/dark"></button>
-                </div>
+    <nav>
+    <!-- criando a navBar -->
+        <div class="navBar">
+            <span id="dev"><a href="#home">&lt;Dev&nbsp;/&gt;</a></span>
+            <div class="barra">
+                <a id="sobreBar" href="#about">Sobre</a>
+                <a id="projetosBar" href="#projetos">Projetos</a>
+                <a id="habilidadesBar" href="#skills">Habilidades</a>
+                <a id="contatoBar" href="#contact">Contato</a>
+                <button id="l_dBtn"><img id="l_d" src="assets/light_dark.svg" alt="light/dark"></button>
             </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div id="home">
             <!-- Criando a parte do home -->
             <div class="homeContainer">
                 <div class="homeText">
@@ -42,7 +45,7 @@
             </div>
         </div>
     </section>
-        <section id="about">
+    <section id="about">
         <div class="aboutContainer">
             <div class="aboutImage">
                 <img id='aboutImage'src="assets/programming-image.jpg" alt="programming-image">
@@ -74,44 +77,37 @@
         </div>
     </section>
     <section id="projetos">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
+        <!-- como tem poucos projetos, talvez fique um pouco estranho dentro do site. ALem disso, como so tem 3 projetos, nao ira aparecer os botoes para ir e voltar do carrossel -->
+        <div class="projectsContainer swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.24.25_1171a8bb.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Calculadora em JS</h2>
+                        <p class="project-description">Atividade feita em aula</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 10.26.11_37e789ae.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Site Semde</h2>
+                        <p class="project-description">Projeto de Residência 1</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 11.14.00_603de8fa.jpg" alt="" class="project-image">
+                        <h2 class="project-name">Saas Barber</h2>
+                        <p class="project-description">Projeto em Andamento</p>
+                        <button class="see-button">Ver o Projeto</button>
+                    </div>
+                </div>
 
-                <div class="slide first">
-                    <img src="assets/testeimg.png" alt="Imagem 1">
-                </div>
-                <div class="slide">
-                    <img src="assets/PFP.png" alt="Imagem 2">
-                </div>
-                <div class="slide">
-                    <img src="assets/testeimg.png" alt="Imagem 3">
-                </div>
-                <div class="slide">
-                    <img src="assets/PFP.png" alt="Imagem 4">
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
             </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-
         </div>
     </section>
-        <section id="skills">
+    <section id="skills">
         <div class="skills-container">
             <div class="skills-card 1">
                 <img src="assets/HTML5_logo_and_wordmark.svg.png" alt="Html Logo">
@@ -139,8 +135,8 @@
             </div>
 
             <div class="skills-card 6">
-                <img src="" alt="">
-                <p></p>
+                <img src="assets/pythonlogo.png" alt="Python Logo">
+                <p>Python</p>
             </div>
         </div>
     </section>
@@ -148,19 +144,27 @@
         <div class="contact-container">
             <form action="" class="contact-left">
                 <div class="contact-left-tittle">
-                    <h2>Get In Touch</h2>
+                    <h2>Entre em Contato</h2>
                     <hr>
                 </div>
                 <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                 <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>    
+                <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
             </form>
-
             <div class="contact-right">
-                <img src="assets/right_img.png" alt="">
+                <img src="assets/Imagem do WhatsApp de 2025-11-16 à(s) 13.10.16_93b3df91.jpg" alt="">
             </div>
         </div>
     </section>
+    <footer>
+        <div class="rodape">
+            <p>&copy; João Guilherme Costa Carvalho</p>
+            <p>Tel.: (79) 9 1234-5678</p>
+            <p>Email.: joao.ccarvalho@souunit.com.br</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="juntando.js"></script>
 </body>
 </html>
